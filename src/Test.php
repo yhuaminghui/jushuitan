@@ -13,6 +13,6 @@ class Test
 {
     public function index()
     {
-        echo 'test package 1';
+        echo 'test package 2';
     }
 }
