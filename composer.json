@@ -1,0 +1,19 @@
+{
+    "name": "huaminghui/jushuitan",
+    "description": "聚水潭SDK",
+    "type": "library",
+    "require": {
+        "php": ">=7.2"
+    },
+    "authors": [
+        {
+            "name": "yhuaminghui",
+            "email": "yhuaminghui@sina.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jushuitan\\":  "src/"
+        }
+    }
+}
