@@ -1,0 +1,32 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: huaminghui
+ * Date: 2019/10/31
+ * Time: 6:10 PM
+ */
+// 注意 此为配置文件，需要去掉文件名字的 .temp
+return [
+    // 当前是否为测试
+    'is_test'           =>  true,
+    // 是否使用 https
+    'is_https'          =>  false,
+
+    // 正式环境 http
+    'formal_url'        =>  'http://open.erp321.com/api/open/query.aspx',
+    // 沙箱环境 http
+    'sand_url'          =>  'http://c.jushuitan.com/api/open/query.aspx',
+
+    // 正式环境 https
+    'formal_url_s'      =>  'https://open.erp321.com/api/open/query.aspx',
+    // 沙箱环境 https
+    'sand_url_s'        =>  'https://c.jushuitan.com/api/open/query.aspx',
+
+    // 合作方编号
+    'partnerid'         =>  '',
+    // 接入密钥
+    'partnerkey'        =>  '',
+    // 	授权码
+    'token'             =>  '',
+
+];
