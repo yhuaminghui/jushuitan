@@ -16,35 +16,29 @@ trait Url
     private $token;
     private $partnerkey;
 
-    public function __construct()
+    protected function __construct()
     {
         $this->_ini();
     }
 
-    private function _ini()
+    public function setUrl($url = '')
     {
-        $config = include_once '../config.php';
+        $this->url = $url;
+    }
 
-        if ($config['is_test'] === true)
-        {
-            if ($config['is_https'] === true)
-            {
-                $this->url = $config['sand_url_s'];
-            }else{
-                $this->url = $config['sand_url'];
-            }
-        }else{
-            if ($config['is_https'] === true)
-            {
-                $this->url = $config['formal_url_s'];
-            }else{
-                $this->url = $config['formal_url'];
-            }
-        }
+    public function setPartnerid($partnerid)
+    {
+        $this->partnerid = $partnerid;
+    }
 
-        $this->partnerid = $config['partnerid'];
-        $this->partnerkey = $config['partnerkey'];
-        $this->token = $config['token'];
+    public function setToken($token)
+    {
+        $this->token = $token;
+    }
+
+    public function setPartnerkey($partnerkey)
+    {
+        $this->partnerkey = $partnerkey;
     }
 
     private function getSysParam()

@@ -13,7 +13,7 @@ class BaseJushuitan
 {
 
     // 初始化 参数
-    public function __construct()
+    protected function __construct()
     {
 
     }

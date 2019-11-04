@@ -13,6 +13,7 @@ class Jushuitan extends BaseJushuitan
 {
     use Url;
 
+
     public function pushOrder($param)
     {
         return $this->POST($this->getUrl('jushuitan.orders.upload'),$param);
