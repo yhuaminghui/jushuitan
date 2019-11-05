@@ -26,7 +26,7 @@ return [
     'partnerid'         =>  '',
     // 接入密钥
     'partnerkey'        =>  '',
-    // 	授权码
+    // 授权码
     'token'             =>  '',
 
 ];
