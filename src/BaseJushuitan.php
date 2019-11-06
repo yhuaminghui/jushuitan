@@ -40,9 +40,9 @@ class BaseJushuitan
             }
             curl_close($ch);
 
-            return ['error'=>-1,'msg'=>$msg,'data'=>json_decode($result,true)];
+            return ['code'=>1,'msg'=>$msg,'data'=>json_decode($result,true)];
         } catch(Exception $e) {
-            return ['error'=>-1,'msg'=>$e->getMessage()];
+            return ['code'=>-1,'msg'=>$e->getMessage(),'data'=>[]];
         }
 
     }
