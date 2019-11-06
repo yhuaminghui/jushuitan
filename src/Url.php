@@ -71,25 +71,15 @@ trait Url
 
     private function checkSysParam()
     {
-        if (empty($this->url)) return ['error'=>-1,'msg'=>'请设置请求地址'];
-        if (empty($this->partnerid)) return ['error'=>-1,'msg'=>'请设置合作方编号'];
-        if (empty($this->token)) return ['error'=>-1,'msg'=>'请设置授权码'];
-        if (empty($this->partnerkey)) return ['error'=>-1,'msg'=>'请设置接入密钥'];
-        return ['error'=>1,'msg'=>'成功'];
+        if (empty($this->url)) throw new \Exception('请设置请求地址',-1);
+        if (empty($this->partnerid)) throw new \Exception('请设置合作方编号',-1);
+        if (empty($this->token)) throw new \Exception('请设置授权码',-1);
+        if (empty($this->partnerkey)) throw new \Exception('请设置接入密钥',-1);
     }
 
     public function getUrl($method)
     {
-        // 验证请求参数是否正确
-        $sysParam = $this->checkSysParam();
-        if ($sysParam['error'] !== 1)
-        {
-            return ['error'=>-1,'msg'=>$sysParam['msg']];
-        }
-
-        return [
-            'error'     =>  1,
-            'url'       =>  $this->url . '?' . http_build_query($this->sign($method))
-        ];
+        $this->checkSysParam();
+        return $this->url . '?' . http_build_query($this->sign($method));
     }
 }

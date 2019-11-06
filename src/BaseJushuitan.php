@@ -16,14 +16,14 @@ class BaseJushuitan
 
     protected function POST($url, $data = [])
     {
-        if ($url['error'] !== 1) return ['error'=>-1,'msg'=>$url['msg']];
+
         try {
             if (empty($data))
             {
                 $data = (object)[];
             }
 
-            $ch = curl_init($url['url']);
+            $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
             curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
             curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
