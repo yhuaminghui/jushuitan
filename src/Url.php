@@ -16,7 +16,7 @@ trait Url
     private $token;
     private $partnerkey;
 
-    protected function __construct()
+    public function __construct()
     {
         $this->_ini();
     }
