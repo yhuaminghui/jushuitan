@@ -9,14 +9,10 @@
 namespace Jushuitan;
 
 
-class JushuitanPush extends BaseJushuitan
+class JushuitanPush implements \Push
 {
     use Url;
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
+    use Request;
 
     // 订单推送
     public function pushOrder($param)

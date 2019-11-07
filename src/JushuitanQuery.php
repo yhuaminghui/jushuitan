@@ -9,14 +9,10 @@
 namespace Jushuitan;
 
 
-class JushuitanQuery extends BaseJushuitan
+class JushuitanQuery implements \Query
 {
     use Url;
-
-    public function __construct()
-    {
-        parent::__construct();
-    }
+    use Request;
 
     // 店铺查询
     public function queryShop($param = [])

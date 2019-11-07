@@ -2,17 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: huaminghui
- * Date: 2019/10/31
- * Time: 6:11 PM
+ * Date: 2019/11/7
+ * Time: 10:57 AM
  */
 
 namespace Jushuitan;
 
 
-class BaseJushuitan
+trait Request
 {
-    // 初始化 参数
-    protected function __construct(){}
 
     protected function POST($url, $data = [])
     {
