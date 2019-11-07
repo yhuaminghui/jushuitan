@@ -5,8 +5,9 @@
  * Date: 2019/11/7
  * Time: 11:00 AM
  */
+namespace Jushuitan;
 
-interface Query
+interface QueryInterface
 {
     // 店铺查询
     public function queryShop($param = []);

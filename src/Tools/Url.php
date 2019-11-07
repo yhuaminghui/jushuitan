@@ -16,11 +16,6 @@ trait Url
     private $token;
     private $partnerkey;
 
-    public function __construct()
-    {
-        $this->_ini();
-    }
-
     public function setUrl($url = '')
     {
         $this->url = $url;

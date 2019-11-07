@@ -9,7 +9,7 @@
 namespace Jushuitan;
 
 
-class JushuitanQuery implements \Query
+class JushuitanQuery implements QueryInterface
 {
     use Url;
     use Request;

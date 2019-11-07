@@ -9,7 +9,7 @@
 namespace Jushuitan;
 
 
-class JushuitanPush implements \Push
+class JushuitanPush implements PushInterface
 {
     use Url;
     use Request;
