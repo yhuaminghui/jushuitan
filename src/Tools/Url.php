@@ -6,7 +6,7 @@
  * Time: 6:30 PM
  */
 
-namespace Jushuitan;
+namespace Jushuitan\Tools;
 
 
 trait Url

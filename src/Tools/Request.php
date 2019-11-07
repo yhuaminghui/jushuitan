@@ -6,7 +6,7 @@
  * Time: 10:57 AM
  */
 
-namespace Jushuitan;
+namespace Jushuitan\Tools;
 
 
 trait Request

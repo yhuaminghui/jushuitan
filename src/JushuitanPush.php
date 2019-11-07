@@ -9,6 +9,10 @@
 namespace Jushuitan;
 
 
+use Jushuitan\Standard\PushInterface;
+use Jushuitan\Tools\Request;
+use Jushuitan\Tools\Url;
+
 class JushuitanPush implements PushInterface
 {
     use Url;

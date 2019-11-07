@@ -5,7 +5,7 @@
  * Date: 2019/11/7
  * Time: 10:59 AM
  */
-namespace Jushuitan;
+namespace Jushuitan\Standard;
 
 interface PushInterface
 {

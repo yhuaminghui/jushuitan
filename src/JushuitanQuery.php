@@ -9,6 +9,10 @@
 namespace Jushuitan;
 
 
+use Jushuitan\Standard\QueryInterface;
+use Jushuitan\Tools\Request;
+use Jushuitan\Tools\Url;
+
 class JushuitanQuery implements QueryInterface
 {
     use Url;
