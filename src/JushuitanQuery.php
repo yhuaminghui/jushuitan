@@ -25,7 +25,7 @@ class JushuitanQuery implements QueryInterface
     }
 
     // 物流公司查询
-    public function queryLogistics($param = [])
+    public function queryLogisticsCompany($param = [])
     {
         return $this->POST($this->getUrl('logisticscompany.query'),$param);
     }
@@ -40,5 +40,11 @@ class JushuitanQuery implements QueryInterface
     public function queryTaoAuth($param = [])
     {
         return $this->POST($this->getUrl('auth.shop.generate.query'),$param);
+    }
+
+    // 物流公司查询
+    public function queryLogistics($param = [])
+    {
+        return $this->POST($this->getUrl('logistic.query'),$param);
     }
 }
