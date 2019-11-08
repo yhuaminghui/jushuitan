@@ -47,4 +47,10 @@ class JushuitanQuery implements QueryInterface
     {
         return $this->POST($this->getUrl('logistic.query'),$param);
     }
+
+    // 查询订单
+    public function queryOrder($param = [])
+    {
+        return $this->POST($this->getUrl('orders.single.query'),$param);
+    }
 }
