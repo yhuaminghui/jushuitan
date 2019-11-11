@@ -33,7 +33,7 @@ class JushuitanPush implements PushInterface
     // 订单发货
     public function sendOrder($param = [])
     {
-        return $this->POST($this->getUrl('ordersent.upload'),$param);
+        return $this->POST($this->getUrl('orders.sent.plate'),$param);
     }
 
     // 订单分仓
