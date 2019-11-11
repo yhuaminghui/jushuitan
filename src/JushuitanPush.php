@@ -30,10 +30,10 @@ class JushuitanPush implements PushInterface
         return $this->POST($this->getUrl('jushuitan.orders.cancel'),$param);
     }
 
-    // 订单发货
+    // 订单发货 此接口数据依赖销售出库单
     public function sendOrder($param = [])
     {
-        return $this->POST($this->getUrl('orders.sent.plate'),$param);
+        return $this->POST($this->getUrl('orders.wms.sent.upload'),$param);
     }
 
     // 订单分仓

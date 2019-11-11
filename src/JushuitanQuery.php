@@ -53,4 +53,12 @@ class JushuitanQuery implements QueryInterface
     {
         return $this->POST($this->getUrl('orders.single.query'),$param);
     }
+
+    // 销售出库查询
+    public function queryOrderOutSimple($param = [])
+    {
+        return $this->POST($this->getUrl('orders.out.simple.query'),$param);
+    }
+
+
 }
