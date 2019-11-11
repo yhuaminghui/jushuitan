@@ -41,4 +41,10 @@ class JushuitanPush implements PushInterface
     {
         return $this->POST($this->getUrl('orders.modifywms.upload'),$param);
     }
+
+    // 库存同步
+    public function inventoryUpload($param = [])
+    {
+        return $this->POST($this->getUrl('inventory.wms.upload'),$param);
+    }
 }

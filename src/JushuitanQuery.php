@@ -60,5 +60,9 @@ class JushuitanQuery implements QueryInterface
         return $this->POST($this->getUrl('orders.out.simple.query'),$param);
     }
 
-
+    // 库存查询
+    public function queryInventory($param = [])
+    {
+        return $this->POST($this->getUrl('inventory.query'),$param);
+    }
 }
